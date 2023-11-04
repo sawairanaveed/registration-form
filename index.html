@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form action="submit_registration.php" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="cnic">CNIC:</label>
+            <input type="text" id="cnic" name="cnic" pattern="[0-9]{5}-[0-9]{7}-[0-9]{1}" placeholder="12345-1234567-1" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="country">
+                <option value="us">Male</option>
+                <option value="ca">Female</option>
+                <option value="ca">Other</option>
+            </select><hr>
+            <label for="favorite_color">Favorite Color:</label>
+            <input type="color" id="favorite_color" name="favorite_color" value="#ff0000" style="margin-left:0px;"><hr>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><hr>
+            <label for="profile_pic">Upload Profile Picture:</label>
+            <input type="file" id="profile_pic" name="profile_pic" accept="image/*" required><hr>
+
+           
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="uk">Pakistan</option>
+                <option value="uk">India</option>
+                <option value="uk">Russia</option>
+                <option value="uk">Australia</option>
+                <option value="uk">Spain</option>
+                <option value="uk">China</option>
+            </select>
+<br><br>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
